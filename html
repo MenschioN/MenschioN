@@ -1,4 +1,4 @@
-----main-menu-----
+------ ГЛАВНАЯ--------- О НАС-------
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -24,12 +24,12 @@
 						</a>
 					</li>
 					<li class="nav-list__item item-link">
-						<a href="genres/index.html" class="item-link__link">
+						<a href="sushi-shop-start-project bonus/index.html" class="item-link__link">
 							Каталог
 						</a>
 					</li>
 					<li class="nav-list__item item-link">
-						<a href=".html" class="item-link__link">
+						<a href="location/location.html" class="item-link__link">
 							Где нас найти?
 						</a>
 					</li>
@@ -46,7 +46,7 @@
 	<main class="main">
 		<section class="section-do">
 			<div class="fixed-container">
-				<h2 class="section-heading text-center">Новые релизы</h2>
+				<h2 class="section-heading text-center">девиз компании</h2>
 				<p class="section-description text-center">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa similique tempore 
 					inventore repudiandae quia tenetur omnis dolorum laboriosam? Tempora porro consectetur suscipit necessitatibus quos eum maiores sapiente blanditiis nostrum?
@@ -55,14 +55,15 @@
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa similique tempore 
 					inventore repudiandae quia tenetur omnis dolorum laboriosam? Tempora porro consectetur suscipit necessitatibus quos eum maiores sapiente blanditiis nostrum?
 				</p>
-				
+				<h2>Новинки компании</h2>
 			</div>
 		</section>
 		<section class="section-hero">
 			<div class="fixed-container hero-container">
+				
 				<section class="section">   
 					
-						<h2>Новинки компании</h2>
+					
 				
 					<section class="slideshow">
 						<div class="slideshow-item">
@@ -129,14 +130,536 @@
     </footer>
 </body>
 </html>
+--------------КОТЯЛОГ--------------
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Магазин ХУЙ</title>
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700&amp;subset=cyrillic-ext" rel="stylesheet">
+</head>
 
+<body>
 
+	<header class="header">
+		<div class="fixed-container header-container">
+			<a href="index.html" class="header__logo logo-link">
+				<img  src="https://i.ytimg.com/vi/OQGdrezi0Y4/maxresdefault.jpg" alt="3ИСП1 котики" class="logo-link__img">
+			</a>
+			<nav class="header__nav">
+				<ul class="header__nav nav-list">
+					<li class="nav-list__item item-link">
+						<a href="../index.html" class="item-link__link">
+							О нас
+						</a>
+					</li>
+					<li class="nav-list__item item-link">
+						<a href="../sushi-shop-start-project bonus/index.html" class="item-link__link">
+							Каталог
+						</a>
+					</li>
+					<li class="nav-list__item item-link">
+						<a href="../location/location.html" class="item-link__link">
+							Где нас найти?
+						</a>
+					</li>
+					<li class="nav-list__item item-link">
+						<a href="../registr/index.html" class="item-link__link">
+							Вход и Регистрация
+						</a>
+					</li>
+				</ul>
+			</nav>
+		
+		</div>
+	</header>
+	<div class="fixed-container">
+	<div class="container mb-5">
+		<div class="row">
+			<div class="col-md-4">
 
+				<!-- Корзина -->
+				<div class="card mb-4">
+					<div class="card-body">
+						<h5 class="card-title">Ваш заказ</h4>
 
+							<div data-cart-empty class="alert alert-secondary" role="alert">
+							Корзина пуста
+						</div>
 
+						<!-- cart-wrapper -->
+						<div class="cart-wrapper">
 
+						</div>
+						<!-- // cart-wrapper -->
 
+						<!-- Стоимость заказа -->
+						<div class="cart-total">
+							<p data-cart-delivery class="none">
+								<span class="h5">Доставка:</span>
+								<span class="delivery-cost">250 ₽</span><br>
+								<span class="small">Бесплатно при заказе от 600 ₽</span>
+							</p>
+							<p><span class="h5">Итого:</span>
+								<span class="total-price">0</span>
+								<span class="rouble">₽</span></p>
+						</div>
+						<!-- // Стоимость заказа -->
 
+					</div>
 
+					<!-- Оформить заказ -->
+					<div id="order-form" class="card-body border-top none">
+						<h5 class="card-title">Оформить заказ</h4>
+						<form>
+							<button type="submit" class="btn btn-primary">Заказать</button>
+						</form>
+					</div>
+					<!-- // Оформить заказ -->
+
+				</div>
+				<!-- // Корзина -->
+
+			</div>
+			<!-- Товары -->
+			<div class="col-md-8">
+				<div class="row666" id="products-container">
+					<div class="col-md-6">
+						<div class="card mb-4" data-id="1">
+							<a href="../product/product.html"><img class="product-img" src="img/roll/california-hit.jpg" alt=""></a>
+							<div class="card-body text-center">
+								<h4 class="item-title">ХУЙ</h4>
+								<p><small data-items-in-box class="text-muted">6 шт.</small></p>
+
+								<div class="details-wrapper">
+
+									<!-- Счетчик -->
+									<div class="items counter-wrapper">
+										<div class="items__control" data-action="minus">-</div>
+										<div class="items__current" data-counter>1</div>
+										<div class="items__control" data-action="plus">+</div>
+									</div>
+									<!-- // Счетчик -->
+
+									<div class="price">
+										<div class="price__weight">100г.</div>
+										<div class="price__currency">250₽</div>
+									</div>
+								</div>
+
+								<button data-cart type="button" class="btn btn-primary">
+									+ в корзину
+								</button>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="card mb-4" data-id="2">
+							<a href="../product/product.html"><img class="product-img" src="img/roll/california-hit.jpg" alt=""></a>
+							<div class="card-body text-center">
+								<h4 class="item-title">ХУЙня</h4>
+								<p><small data-items-in-box class="text-muted">5 шт.</small></p>
+
+								<div class="details-wrapper">
+
+									<!-- Счетчик -->
+									<div class="items counter-wrapper">
+										<div class="items__control" data-action="minus">-</div>
+										<div class="items__current" data-counter>1</div>
+										<div class="items__control" data-action="plus">+</div>
+									</div>
+									<!-- // Счетчик -->
+
+									<div class="price">
+										<div class="price__weight">50г.</div>
+										<div class="price__currency">350₽</div>
+									</div>
+								</div>
+
+								<button data-cart type="button" class="btn btn-primary">
+									+ в корзину
+								</button>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="card mb-4" data-id="3">
+							<a href="../product/product.html"><img class="product-img" src="img/roll/california-hit.jpg" alt=""></a>
+							<div class="card-body text-center">
+								<h4 class="item-title">ХУЙня</h4>
+								<p><small data-items-in-box class="text-muted">5 шт.</small></p>
+
+								<div class="details-wrapper">
+
+									<!-- Счетчик -->
+									<div class="items counter-wrapper">
+										<div class="items__control" data-action="minus">-</div>
+										<div class="items__current" data-counter>1</div>
+										<div class="items__control" data-action="plus">+</div>
+									</div>
+									<!-- // Счетчик -->
+
+									<div class="price">
+										<div class="price__weight">50г.</div>
+										<div class="price__currency">350₽</div>
+									</div>
+								</div>
+
+								<button data-cart type="button" class="btn btn-primary">
+									+ в корзину
+								</button>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="card mb-4" data-id="4">
+							<a href="../product/product.html"><img class="product-img" src="img/roll/california-hit.jpg" alt=""></a>
+							<div class="card-body text-center">
+								<h4 class="item-title">ХУЙня</h4>
+								<p><small data-items-in-box class="text-muted">5 шт.</small></p>
+
+								<div class="details-wrapper">
+
+									<!-- Счетчик -->
+									<div class="items counter-wrapper">
+										<div class="items__control" data-action="minus">-</div>
+										<div class="items__current" data-counter>1</div>
+										<div class="items__control" data-action="plus">+</div>
+									</div>
+									<!-- // Счетчик -->
+
+									<div class="price">
+										<div class="price__weight">50г.</div>
+										<div class="price__currency">350₽</div>
+									</div>
+								</div>
+
+								<button data-cart type="button" class="btn btn-primary">
+									+ в корзину
+								</button>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="card mb-4" data-id="5">
+							<a href="../product/product.html"><img class="product-img" src="img/roll/california-hit.jpg" alt=""></a>
+							<div class="card-body text-center">
+								<h4 class="item-title">ХУЙня</h4>
+								<p><small data-items-in-box class="text-muted">5 шт.</small></p>
+
+								<div class="details-wrapper">
+
+									<!-- Счетчик -->
+									<div class="items counter-wrapper">
+										<div class="items__control" data-action="minus">-</div>
+										<div class="items__current" data-counter>1</div>
+										<div class="items__control" data-action="plus">+</div>
+									</div>
+									<!-- // Счетчик -->
+
+									<div class="price">
+										<div class="price__weight">50г.</div>
+										<div class="price__currency">350₽</div>
+									</div>
+								</div>
+
+								<button data-cart type="button" class="btn btn-primary">
+									+ в корзину
+								</button>
+
+							</div>
+						</div>
+					</div>
+					
+					
+
+					
+					
+					
+				
+				</div>
+			</div>
+
+				
+
+		</div>
+	</div>
+</div>
+	<!-- Подключаем скрипты -->
+
+	<script src="./js/cart/renderProducts.js"></script>
+	<script src="./js/cart/calcCartPrice.js"></script>
+	<script src="./js/cart/toggleCartStatus.js"></script>
+	<script src="./js/cart/counter-02.js"></script>
+	<script src="./js/cart/cart-02.js"></script>
+
+	<footer class="footer">
+        <div class="fixed-container">
+            <div class="footer-box">
+                <nav class="navbar-footer">
+                    <ul class="navbar-box-footer">
+                        <li class="navbar-item-footer"><a href="">О нас </a></li>
+                        <li class="navbar-item-footer"><a href="">Каталог</a></li>
+                        <li class="navbar-item-footer"><a href="">Где нас найти?</a></li>
+                        <li class="navbar-item-footer"><a href="">Вход и Регистрация</a></li>
+                    </ul>
+                </nav>
+                <div class="rights">
+                    <p>@ lorem "lorem" 2022. All rights reserved</p>
+                </div>
+                <div class="contacts">
+                    <ul class="contacts-box">
+                        <li>+123456789</li>
+                        <li>8(800)555-35-35</li>
+                        <li>lorem@gmail.com</li>
+                    </ul>
+                </div>
+           </div> 
+       </div> 
+    </footer>
+</body>
+</html>
+--------------ГДЕ НАС НАЙТИ-----------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/location.css">
+    <title>location</title>
+</head>
+<body>
+    <header class="header">
+		<div class="fixed-container header-container">
+			<a href="index.html" class="header__logo logo-link">
+				<img  src="https://i.ytimg.com/vi/OQGdrezi0Y4/maxresdefault.jpg" alt="3ИСП1 котики" class="logo-link__img">
+			</a>
+			<nav class="header__nav">
+				<ul class="header__nav nav-list">
+					<li class="nav-list__item item-link">
+						<a href="../index.html" class="item-link__link">
+							О нас
+						</a>
+					</li>
+					<li class="nav-list__item item-link">
+						<a href="../sushi-shop-start-project bonus/index.html" class="item-link__link">
+							Каталог
+						</a>
+					</li>
+					<li class="nav-list__item item-link">
+						<a href="../location/location.html" class="item-link__link">
+							Где нас найти?
+						</a>
+					</li>
+					<li class="nav-list__item item-link">
+						<a href="../registr/index.html" class="item-link__link">
+							Вход и Регистрация
+						</a>
+					</li>
+				</ul>
+			</nav>
+		
+		</div>
+	</header>
+    <div class="fixed-container">
+        <section class="location-box">
+            <div class="location-item"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12710.022435283307!2d38.0052545681927!3d55.726606323145994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ac91cda27245f%3A0x53f45c36bc479c87!2z0JPQuNC_0LXRgCDQm9C10L3RgtCw!5e0!3m2!1sru!2sru!4v1655425056522!5m2!1sru!2sru"  height="450" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <div class="about-box">
+                <div class="about-item"><span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa quos hic assumenda molestiae totam, optio magnam debitis id quas rem, expedita accusamus voluptate excepturi quidem illo qui omnis. Quibusdam, blanditiis!</span></div>
+                <div class="about-item"><span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa quos hic assumenda molestiae totam, optio magnam debitis id quas rem, expedita accusamus voluptate excepturi quidem illo qui omnis. Quibusdam, blanditiis!</span></div>
+                <div class="about-item"><span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa quos hic assumenda molestiae totam, optio magnam debitis id quas rem, expedita accusamus voluptate excepturi quidem illo qui omnis. Quibusdam, blanditiis!</span></div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="fixed-container">
+            <div class="footer-box">
+                <nav class="navbar-footer">
+                    <ul class="navbar-box-footer">
+                        <li class="navbar-item-footer"><a href="">О нас </a></li>
+                        <li class="navbar-item-footer"><a href="">Каталог</a></li>
+                        <li class="navbar-item-footer"><a href="">Где нас найти?</a></li>
+                        <li class="navbar-item-footer"><a href="">Вход и Регистрация</a></li>
+                    </ul>
+                </nav>
+                <div class="rights">
+                    <p>@ lorem "lorem" 2022. All rights reserved</p>
+                </div>
+                <div class="contacts">
+                    <ul class="contacts-box">
+                        <li>+123456789</li>
+                        <li>8(800)555-35-35</li>
+                        <li>lorem@gmail.com</li>
+                    </ul>
+                </div>
+           </div> 
+       </div> 
+    </footer>
+</body>
+</html>
+----------------ВХОД И РЕГ-------------
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>MusicON</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide Navbar</title>
+	<link rel="stylesheet" type="text/css" href="slide navbar style.css">
+</head>
+<body>
+	
+	<section>
+		
+	<div class="main">  
+	
+	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form action="https://jsonplaceholder.typicode.com/posts" method="post">
+					<label class="reg" for="chk" aria-hidden="true">Регистрация</label>
+					<input type="text" name="txt" placeholder="Name" required="">
+					<input type="text" name="txt" placeholder="Surname" required="">
+					<input type="text" name="txt" placeholder="Patronymic " >
+					<input type="text" name="txt" placeholder="login" required="">
+
+					<input type="email" name="email" placeholder="Email" required="">
+					<input type="password" name="pswd" placeholder="Password" required="">
+					<input type="password" name="pswd" placeholder="Password repeat" required="">
+					<input type="checkbox" name="remember_me"  checked="checked"/> 
+					<label  for="remember_me">согласие с правилами регистрации </label>
+					<button>
+						Регистрация
+					</button>
+				</form>
+			</div>
+
+			<div class="login">
+				<form action="https://jsonplaceholder.typicode.com/posts" method="post">
+					<label class="reg" for="chk" aria-hidden="true">Войти</label>
+					<input type="email" name="email" placeholder="login" required="">
+					<input type="password" name="pswd" placeholder="Password" required="">
+					
+					<button>Войти</button>
+				</form>
+			</div>
+	</div>
+</section>
+</body>
+</html>
+  
+</body>
+</html>
+---------------ТОВАРЫ--------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/product.css">
+    <title>product</title>
+</head>
+<body>
+    
+	<header class="header">
+		<div class="fixed-container header-container">
+			<a href="index.html" class="header__logo logo-link">
+				<img  src="https://i.ytimg.com/vi/OQGdrezi0Y4/maxresdefault.jpg" alt="3ИСП1 котики" class="logo-link__img">
+			</a>
+			<nav class="header__nav">
+				<ul class="header__nav nav-list">
+					<li class="nav-list__item item-link">
+						<a href="../index.html" class="item-link__link">
+							О нас
+						</a>
+					</li>
+					<li class="nav-list__item item-link">
+						<a href="../sushi-shop-start-project bonus/index.html" class="item-link__link">
+							Каталог
+						</a>
+					</li>
+					<li class="nav-list__item item-link">
+						<a href="../location/location.html" class="item-link__link">
+							Где нас найти?
+						</a>
+					</li>
+					<li class="nav-list__item item-link">
+						<a href="../registr/index.html" class="item-link__link">
+							Вход и Регистрация
+						</a>
+					</li>
+				</ul>
+			</nav>
+		
+		</div>
+	</header>
+    <main class="main">
+        <div class="fixed-container">
+            <div class="product">
+                <h2>Iphone 10 pro xbox X X X</h2>
+                <form class="product-box">
+                    <div class="product-photo"><img src="../sushi-shop-start-project bonus/img/roll/zapech-california.jpg" alt=""></div>
+                    <div class="product-description">
+                        <div>
+                            <h3>Описание</h3>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eum inventore hic illo deserunt doloribus ad natus? Corporis eveniet explicabo at, vel earum ab omnis ullam sapiente, impedit numquam illo!
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet quibusdam, vitae necessitatibus repellendus debitis quo in quidem at a dolores sit voluptatum, assumenda, quasi asperiores aliquam veritatis quaerat doloremque iusto.
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, quas dolore, sint eaque doloribus recusandae natus explicabo quod minus quisquam deserunt adipisci, itaque perferendis autem tenetur eum aliquid tempora pariatur.
+                        </div>
+                        <div>
+                            <h3>Характеристкики</h3>
+                            <span>Страна</span> <br>
+                            <span>Год выпуска</span> <br>
+                            <span>Модель</span>
+                        </div>
+                        <p>20000 ₽</p>
+                        <button><a href="../sushi-shop-start-project bonus/index.html">Каталог</a> </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="fixed-container">
+            <div class="footer-box">
+                <nav class="navbar-footer">
+                    <ul class="navbar-box-footer">
+                        <li class="navbar-item-footer"><a href="">О нас </a></li>
+                        <li class="navbar-item-footer"><a href="">Каталог</a></li>
+                        <li class="navbar-item-footer"><a href="">Где нас найти?</a></li>
+                        <li class="navbar-item-footer"><a href="">Вход и Регистрация</a></li>
+                    </ul>
+                </nav>
+                <div class="rights">
+                    <p>@ lorem "lorem" 2022. All rights reserved</p>
+                </div>
+                <div class="contacts">
+                    <ul class="contacts-box">
+                        <li>+123456789</li>
+                        <li>8(800)555-35-35</li>
+                        <li>lorem@gmail.com</li>
+                    </ul>
+                </div>
+           </div> 
+       </div> 
+    </footer>
+</body>
+</html>
 
